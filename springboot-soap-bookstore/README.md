@@ -1,0 +1,1 @@
+projeto SOAP demonstrando implementação de projeto com springboot. Dados dos livros utilizados peguei de https://thegreatestbooks.org/
