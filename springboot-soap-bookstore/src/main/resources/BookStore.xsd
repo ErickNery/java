@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="https://github.com/ErickNery/java"
+	xmlns:tns="https://github.com/ErickNery/java" elementFormDefault="qualified">
+
+	<xs:element name="getBookRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ISBN" type="xs:long"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getBookResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="NewElement" type="tns:Book"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="Book">
+		<xs:sequence>
+			<xs:element name="ISBN" type="xs:long"/>
+			<xs:element name="Title" type="xs:string"/>
+			<xs:element name="Author" type="xs:string"/>
+			<xs:element name="Description" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>	
+</xs:schema>
