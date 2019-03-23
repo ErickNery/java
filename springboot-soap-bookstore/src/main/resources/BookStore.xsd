@@ -14,7 +14,7 @@
 	<xs:element name="getBookResponse">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="NewElement" type="tns:Book"/>
+				<xs:element name="Book" type="tns:Book"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
